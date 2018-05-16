@@ -33,10 +33,12 @@ of [Redcarpet](https://www.rubydoc.info/gems/redcarpet/). It exposes
 * Creates a `<base href=""/>` element which you can pass a URL,
 * Creates a hierarchy of `<section>` elements and places headings
   and content inside,
-* If the document contains a single `<h1>` at the beginning, this is
-  copied into the `<title>`, and removed from the document body if
-  determined to be redundant (i.e. unless it contains markup elements),
-* Nested `<blockquote>` elements are converted into `<aside role="note">`,
+* If the document contains exactly one `<h1>` which is the very first
+  thing in the file, it is copied into the `<title>`, and removed from
+  the document body if determined to be redundant (i.e. unless it
+  contains markup elements and not strictly text),
+* A `<blockquote>` element containing exactly one nested
+  `<blockquote>` element is converted into a single `<aside role="note">`,
 * Images on their own paragraph are transformed into a `<figure>`,
 * Text nodes not descendants of `<pre>` are whitespace-normalized and
   indentation is repaired.

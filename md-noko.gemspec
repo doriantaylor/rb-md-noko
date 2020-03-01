@@ -24,10 +24,10 @@ Nokogiri::XML::Document which is amenable to further manipulation.
 
   spec.required_ruby_version = '~> 2.0'
 
-  spec.add_development_dependency "bundler", "~> 1.11"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "bundler", "~> 2.1"
+  spec.add_development_dependency "rake", "~> 13.0"
+  spec.add_development_dependency "rspec", "~> 3.9"
 
   spec.add_runtime_dependency 'redcarpet', '~> 3.4.0'
-  spec.add_runtime_dependency 'xml-mixup', '~> 0.1.5'
+  spec.add_runtime_dependency 'xml-mixup', '~> 0.1.13'
 end

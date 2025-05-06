@@ -22,11 +22,11 @@ Nokogiri::XML::Document which is amenable to further manipulation.
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = '>= 2.0'
+  spec.required_ruby_version = '~> 3', '>= 3.0'
 
   spec.add_development_dependency "bundler", ">= 2.1"
-  spec.add_development_dependency "rake", ">= 13.0"
-  spec.add_development_dependency "rspec", ">= 3.9"
+  spec.add_development_dependency "rake",    ">= 13.0"
+  spec.add_development_dependency "rspec",   ">= 3.9"
 
   spec.add_runtime_dependency 'redcarpet', '>= 3.5'
   spec.add_runtime_dependency 'xml-mixup', '>= 0.1.14'
